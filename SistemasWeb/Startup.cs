@@ -79,7 +79,7 @@ namespace SistemasWeb
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             routes.MapAreaRoute("Principal", "Principal", "{controller=Principal}/{action=''}/{id?}");
-            //routes.MapAreaRoute("Categorias", "Categorias", "{controller=Categorias}/{action=''}/{id?}");
+            routes.MapAreaRoute("Categorias", "Categorias", "{controller=Categorias}/{action=''}/{id?}");
             });
 
             
