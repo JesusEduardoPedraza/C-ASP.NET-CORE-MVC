@@ -219,6 +219,64 @@ namespace SistemasWeb.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("SistemasWeb.Areas.Categorias.Models.TCategoria", b =>
+                {
+                    b.Property<int>("CategoriaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CategoriaID");
+
+                    b.ToTable("_TCategoria");
+                });
+
+            modelBuilder.Entity("SistemasWeb.Areas.Cursos.Models.TCursos", b =>
+                {
+                    b.Property<int>("CursoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CategoriaID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Costo")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("bit");
+
+                    b.Property<byte>("Horas")
+                        .HasColumnType("tinyint");
+
+                    b.Property<byte[]>("Image")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CursoID");
+
+                    b.HasIndex("CategoriaID");
+
+                    b.ToTable("_TCursos");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -266,6 +324,15 @@ namespace SistemasWeb.Data.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SistemasWeb.Areas.Cursos.Models.TCursos", b =>
+                {
+                    b.HasOne("SistemasWeb.Areas.Categorias.Models.TCategoria", "Categoria")
+                        .WithMany("cursos")
+                        .HasForeignKey("CategoriaID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
