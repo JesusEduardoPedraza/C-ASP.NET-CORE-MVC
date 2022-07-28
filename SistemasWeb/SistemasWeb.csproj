@@ -7,6 +7,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.46.3" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
@@ -25,6 +26,7 @@
     <Folder Include="Areas\Cursos\Controllers\" />
     <Folder Include="Areas\Cursos\Data\" />
     <Folder Include="Areas\Cursos\Views\" />
+    <Folder Include="Areas\Directorio\Data\" />
     <Folder Include="Areas\Principal\Data\" />
     <Folder Include="Areas\Principal\Models\" />
   </ItemGroup>

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "A1/2xnKOAS/8f4QzTrS1YrTeKtbgWfT+uPU+8qZ6G17QZf802IO+kc7m7NX71v634L8Oql+a9R7by/bh528a6g==",
+  "dgSpecHash": "hAXE3vgZKrKxI6Qr8CCbX/AdXkLswRzX38H5b3PaiKRCTtgPMheIaHYjOJwlaLWR8Y2CB5z+3XuF2T1ZSmXUJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PCLALO\\Desktop\\VS .NET CORE MVC\\proyectos\\SistemasWeb\\SistemasWeb\\SistemasWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\PCLALO\\.nuget\\packages\\grpc.core\\2.46.3\\grpc.core.2.46.3.nupkg.sha512",
+    "C:\\Users\\PCLALO\\.nuget\\packages\\grpc.core.api\\2.46.3\\grpc.core.api.2.46.3.nupkg.sha512",
     "C:\\Users\\PCLALO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.0.0\\microsoft.aspnetcore.cryptography.internal.3.0.0.nupkg.sha512",
     "C:\\Users\\PCLALO\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.0.0\\microsoft.aspnetcore.cryptography.keyderivation.3.0.0.nupkg.sha512",
     "C:\\Users\\PCLALO\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.0.3\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.0.3.nupkg.sha512",
