@@ -155,3 +155,4 @@ C:\Users\PCLALO\Desktop\VS .NET CORE MVC\proyectos\SistemasWeb\SistemasWeb\obj\D
 C:\Users\PCLALO\Desktop\VS .NET CORE MVC\proyectos\SistemasWeb\SistemasWeb\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\PCLALO\Desktop\VS .NET CORE MVC\proyectos\SistemasWeb\SistemasWeb\obj\Debug\netcoreapp3.0\Razor\Areas\Categorias\Views\Categorias\CIndex.cshtml.g.cs
 C:\Users\PCLALO\Desktop\VS .NET CORE MVC\proyectos\SistemasWeb\SistemasWeb\obj\Debug\netcoreapp3.0\Razor\Areas\Categorias\Views\_ViewImports.cshtml.g.cs
+C:\Users\PCLALO\Desktop\VS .NET CORE MVC\proyectos\SistemasWeb\SistemasWeb\obj\Debug\netcoreapp3.0\Razor\Areas\Directorio\Views\Directorio\DIndex.cshtml.g.cs
